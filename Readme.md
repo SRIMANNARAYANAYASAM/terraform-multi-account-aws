@@ -1,4 +1,4 @@
-## 📘 README.md — AWS Multi-Account Terraform Architecture
+## AWS Multi-Account Terraform Architecture
 
 ### Overview
 
@@ -161,7 +161,7 @@ terraform -chdir=backend destroy -auto-approve
 
 ---
 
-### 🧩 Common Errors & Fixes
+### 🧩 Common Errors faced & Fixes
 
 #### ❌ DynamoDB Table Not Found After Backend Apply
 - **Cause**: Wrong AWS region selected in Console.
@@ -175,7 +175,7 @@ terraform -chdir=backend destroy -auto-approve
 
 #### ❌ CloudTrail Error: `InsufficientS3BucketPolicyException`
 - **Cause**: S3 bucket missing required permissions for CloudTrail.
-- **Fix**: Add this bucket policy manually or via Terraform:
+- **Fix**: Add this bucket policy via Terraform:
 
 ```json
 {
@@ -205,6 +205,22 @@ terraform -chdir=backend destroy -auto-approve
 ```
 
 This policy is modularized in `variables.tf` and injected via `jsonencode()` in `main.tf`.
+
+---
+
+###🔧 What Could Be Improved
+
+-Use Terraform Workspaces to separate dev/prod environments more cleanly instead of folder duplication.
+
+-Add CI/CD integration (e.g., GitHub Actions) to automate plan/apply on commits or pull requests.
+
+-Switch to role-based access using named IAM roles with least privilege instead of relying solely on OrganizationAccountAccessRole.
+
+-Enable AWS Config for continuous compliance tracking and resource drift detection across accounts.
+
+-Add tagging standards to enforce consistent metadata across all resources (owner, environment, cost center).
+
+---
 
 #### ❓ What Does `type = any` Mean in Terraform?
 - **Explanation**: Allows a variable to accept any data type — string, list, map, object, etc.
