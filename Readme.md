@@ -161,7 +161,7 @@ terraform -chdir=backend destroy -auto-approve
 
 ---
 
-### 🧩 Common Errors faced by me & Fixes
+### 🧩 Common Errors faced & Fixes
 
 #### ❌ DynamoDB Table Not Found After Backend Apply
 - **Cause**: Wrong AWS region selected in Console.
