@@ -4,6 +4,8 @@
 
 This project provisions a secure, production-grade AWS multi-account architecture using Terraform. It includes centralized state management, cross-account deployments, reusable modules, and governance controls via AWS Organizations.
 
+Purpose of using Multi-Account AWS Architecture are Environment Isolation, Centralized Governance and Cross-Account Automation.
+
 ---
 
 ### 🔧 Architecture Summary
