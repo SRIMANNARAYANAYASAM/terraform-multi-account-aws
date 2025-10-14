@@ -206,6 +206,20 @@ terraform -chdir=backend destroy -auto-approve
 
 This policy is modularized in `variables.tf` and injected via `jsonencode()` in `main.tf`.
 
+🔧 What Could Be Improved
+Use Terraform Workspaces to separate dev/prod environments more cleanly instead of folder duplication.
+
+Add CI/CD integration (e.g., GitHub Actions) to automate plan/apply on commits or pull requests.
+
+Switch to role-based access using named IAM roles with least privilege instead of relying solely on OrganizationAccountAccessRole.
+
+Enable AWS Config for continuous compliance tracking and resource drift detection across accounts.
+
+Add tagging standards to enforce consistent metadata across all resources (owner, environment, cost center).
+
+Document module inputs/outputs in each folder with a short README for easier collaboration.
+
+
 #### ❓ What Does `type = any` Mean in Terraform?
 - **Explanation**: Allows a variable to accept any data type — string, list, map, object, etc.
 - **Why Used**: Ideal for complex JSON blocks like bucket policies.
