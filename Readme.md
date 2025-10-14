@@ -28,7 +28,7 @@ This project provisions a secure, production-grade AWS multi-account architectur
 
 # Project Flowchart High-level overview of the provisioning sequence and Terraform execution flow across accounts.
 
-Diagrams/Project work flow.jpg
+Diagram/Project work flow.jpg
 
 
 
