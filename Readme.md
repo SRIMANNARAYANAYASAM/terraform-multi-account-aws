@@ -39,16 +39,7 @@ This project provisions a secure, production-grade AWS multi-account architectur
 
 ---
 
-### ✅ Prerequisites
-
-- AWS CLI authenticated to management account
-- Terraform ≥ 1.3.0
-- IAM role `OrganizationAccountAccessRole` exists in member accounts
-- OU IDs retrieved from AWS Organizations
-
----
-
-### 📁 Folder Structure
+### 📁 Folder Structure (Terraform)
 
 ```bash
 .
@@ -74,6 +65,13 @@ This project provisions a secure, production-grade AWS multi-account architectur
     ├── main.tf
     └── variables.tf
 ```
+
+### ✅ Prerequisites
+
+- AWS CLI authenticated to management account
+- Terraform ≥ 1.3.0
+- IAM role `OrganizationAccountAccessRole` exists in member accounts
+- OU IDs retrieved from AWS Organizations
 
 ---
 
