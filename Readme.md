@@ -35,7 +35,7 @@ This project provisions a secure, production-grade AWS multi-account architectur
 
 #### 3. [AWS FLOW] DevOU  
  
-![Dev OU Architecture](Diagram/Project-work-flow.jpg)
+![Dev OU Architecture](Diagram/AWS-Cloud-View-DevOU.jpg)
 
 ---
 
