@@ -33,7 +33,7 @@ POLICY
 # OU ID of the DevOU to which the SCP will be attached
 variable "dev_ou_id" {
   type    = string
-  default = "ou-p8d3-z4q2tpyq"
+  default = "ou-xxxxxxxx"  // Replace with your actual OU ID when deploying
 }
 
 # Name of the central S3 bucket for CloudTrail logs
