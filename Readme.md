@@ -23,14 +23,21 @@ This project provisions a secure, production-grade AWS multi-account architectur
 
 ---
 
-### Architecture Diagrams
+### 🖼️ Architecture Diagrams
 
+#### 1. Project Flowchart  
+.  
+![Project Flowchart](Diagram/Project-work-flow.jpg)
 
-# Project Flowchart High-level overview of the provisioning sequence and Terraform execution flow across accounts.
+#### 2. [AWS Flow] Management Account   
 
-Diagram/Project-work-flow.jpg
+![Management Account](AWS-Management-account.jpg)
 
+#### 3. [AWS FLOW] DevOU  
+ 
+![Dev OU Architecture](Project-work-flow.jpg)
 
+---
 
 ### ✅ Prerequisites
 
