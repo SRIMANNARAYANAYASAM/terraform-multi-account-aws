@@ -13,5 +13,5 @@ variable "name" {
 # IAM role ARN to assume into dev-member account
 variable "dev_role_arn" {
   type        = string
-  default     = "arn:aws:iam::942918512689:role/OrganizationAccountAccessRole"
+  default     = "arn:aws:iam::<dev-account-id>:role/OrganizationAccountAccessRole"
 }
