@@ -31,11 +31,11 @@ This project provisions a secure, production-grade AWS multi-account architectur
 
 #### 2. [AWS Flow] Management Account   
 
-![Management Account](AWS-Management-account.jpg)
+![Management Account](Diagram/AWS-Management-account.jpg)
 
 #### 3. [AWS FLOW] DevOU  
  
-![Dev OU Architecture](Project-work-flow.jpg)
+![Dev OU Architecture](Diagram/Project-work-flow.jpg)
 
 ---
 
