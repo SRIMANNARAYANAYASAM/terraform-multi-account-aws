@@ -1,4 +1,4 @@
-## 📘 README.md — AWS Multi-Account Terraform Architecture
+## AWS Multi-Account Terraform Architecture
 
 ### Overview
 
@@ -161,7 +161,7 @@ terraform -chdir=backend destroy -auto-approve
 
 ---
 
-### 🧩 Common Errors & Fixes
+### 🧩 Common Errors faced by me & Fixes
 
 #### ❌ DynamoDB Table Not Found After Backend Apply
 - **Cause**: Wrong AWS region selected in Console.
@@ -175,7 +175,7 @@ terraform -chdir=backend destroy -auto-approve
 
 #### ❌ CloudTrail Error: `InsufficientS3BucketPolicyException`
 - **Cause**: S3 bucket missing required permissions for CloudTrail.
-- **Fix**: Add this bucket policy manually or via Terraform:
+- **Fix**: Add this bucket policy via Terraform:
 
 ```json
 {
